@@ -27,7 +27,7 @@ with col3:
 
 ### Visualization ###
 
-df = pd.read_excel('./data/heart.xlsx')
+df = pd.read_excel('./data/diabetes.xlsx')
 
 html_3 = """
 <div style="background-color:#87A5E0;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;">
