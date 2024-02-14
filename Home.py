@@ -30,7 +30,7 @@ with col3:
 df = pd.read_excel('./data/diabetes.xlsx')
 
 html_3 = """
-<div style="background-color:#87A5E0;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;">
+<div style="background-color:#E799A3;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;">
 <center><h3>Example data table</h3></center>
 </div>
 """
@@ -39,7 +39,7 @@ st.markdown("")
 st.write(df.head(10))
 
 html_4 = """
-<div style="background-color:#87A5E0;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;">
+<div style="background-color:#E799A3;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;">
 <center><h3>Count plot for various categorical features</h3></center>
 </div>
 """
