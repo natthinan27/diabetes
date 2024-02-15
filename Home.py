@@ -7,7 +7,7 @@ import matplotlib.gridspec as gridspec
 
 
 html_1 = """
-<div style="background-color:#E799A3;margin-top:70px;padding:5px;border-radius:5px;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;">
+<div style="background-color:#E799A3;margin-top:40px;padding:5px;border-radius:5px;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;">
 <center><h4>การวิเคราะห์และการทำนายความเสี่ยงผู้ป่วยเป็นโรคเบาหวานที่ผู้ป่วยเป็นผู้หญิง</h4><h5>Analysis and prediction of the risk of diabetes in female patients.</h5></center>
 </div>
 """
