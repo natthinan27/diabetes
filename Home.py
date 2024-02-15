@@ -95,11 +95,11 @@ def create_count_plot(ax, data, x, palette):
     ax.set_xlabel("")
     ax.set_ylabel("")
 
-# Sex count
-ax1.text(0.3, 165, 'Sex', fontsize=14, fontweight='bold', fontfamily='serif', color="#000000")
-create_count_plot(ax1, df, 'sex', color_palette)
+# Pregnancies count
+ax1.text(0.3, 165, 'Pregnancies', fontsize=14, fontweight='bold', fontfamily='serif', color="#000000")
+create_count_plot(ax1, df, 'pregnancies', color_palette)
 ax1.set_xticks([0, 1])
-ax1.set_xticklabels(["Female(0)", "Male(1)"])
+ax1.set_xticklabels([0, 1,2,3,4])
 
 # Exng count
 ax2.text(0.3, 160, 'Exng', fontsize=14, fontweight='bold', fontfamily='serif', color="#000000")
