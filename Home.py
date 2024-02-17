@@ -53,7 +53,7 @@ st.markdown("")
 # Your existing code
 s1 = st.number_input("# Pregnancies : จำนวนการตั้งครรภ์")
 s2 = st.number_input("# Glucose : ระดับกลูโคสในเลือด")
-s = st.number_input("# BloodPressure : การวัดความดันโลหิต")
+s3 = st.number_input("# BloodPressure : การวัดความดันโลหิต")
 s4 = st.number_input("# SkinThickness : ความหนาของผิวหนัง")
 s5 = st.number_input("# Insulin : ระดับอินซูลินในเลือด")
 s6 = st.number_input("# BMI : ดัชนีมวลกาย")
