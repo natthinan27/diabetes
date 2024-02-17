@@ -59,7 +59,7 @@ s5 = st.number_input("# Insulin : ระดับอินซูลินใน�
 s6 = st.number_input("# BMI : ดัชนีมวลกาย")
 s7 = st.number_input("# DiabetesPedigreeFunction : เปอร์เซ็นต์โรคเบาหวาน")
 s8 = st.number_input("# Age : อายุของผู้ป่วย")
-s9 = st.selectbox("# Outcome : ผลลัพธ์สุดท้าย  (1 = ใช่ 0 = ไม่ใช่)", [0, 1])
+#s9 = st.selectbox("# Outcome : ผลลัพธ์สุดท้าย  (1 = ใช่ 0 = ไม่ใช่)", [0, 1])
 
 # Adjusting font size and making it bold
 st.markdown("<style>h1{font-size: 18px !important;}</style>", unsafe_allow_html=True)
@@ -75,7 +75,7 @@ if st.button("ทำนายผล"):
 
 
 
-   x_input = np.array([[s1, s2, s3, s4, s5, s6, s7, s8, s9]])
+   x_input = np.array([[s1, s2, s3, s4, s5, s6, s7, s8]])
 
    out = rf_model.predict(x_input)
 
