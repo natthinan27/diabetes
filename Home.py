@@ -33,7 +33,7 @@ df = pd.read_excel('./data/diabetes.xlsx')
 ### Analysis ###
 
 html_6 = """
-<div style="background-color:#87A5E0;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;">
+<div style="background-color:#E799A3;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;">
 <center><h3>Example data table</h3></center>
 </div>
 """
@@ -42,7 +42,7 @@ st.markdown("")
 st.write(df.head(10))
 
 html_7 = """
-<div style="background-color:#87A5E0;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;margin-top:20px;">
+<div style="background-color:E799A3;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;margin-top:20px;">
 <center><h3>Class Prediction</h3></center>
 </div>
 """
@@ -119,6 +119,6 @@ if st.button("ทำนายผล"):
       </ul>
       <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">การป้องกันโรคเบาหวานมักจะเน้นไปที่การรักษาพฤติกรรมที่เปลี่ยนแปลงได้ และการสร้างนิสัยการดูแลสุขภาพที่ดี โดยการปฏิบัติตามแนวทางดังกล่าวอาจช่วยลดความเสี่ยงต่อโรคเบาหวานอย่างมีประสิทธิภาพ</h6></left>
       </div>
-      """
+      """-
       st.markdown(html_9, unsafe_allow_html=True)
       st.markdown("")
