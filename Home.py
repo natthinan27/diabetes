@@ -66,21 +66,18 @@ st.markdown("<style>h1{font-size: 18px !important;}</style>", unsafe_allow_html=
 st.markdown("<style>label{font-size: 16px !important; font-weight: bold;}</style>", unsafe_allow_html=True)
 
 if st.button("ทำนายผล"):
+    X = df.drop(["Outcome"], axis=1)
+    y = df["Outcome"]
 
-   X=df.drop(["Outcome"],axis=1)
-   y=df["Outcome"]
+    rf_model = RandomForestClassifier()  # สร้างโมเดล Random Forests
+    rf_model.fit(X, y)
 
-   nb_model = GaussianNB()
-   nb_model.fit(X, y)
+    x_input = np.array([[s1, s2, s3, s4, s5, s6, s7, s8, s9]])
 
+    out = rf_model.predict(x_input)
 
-   x_input = np.array([[s1, s2, s3, s4, s5, s6, s7, s8, s9]])
-
-   out = nb_model.predict(x_input)
-
-   if out[0]== 0 :
-          
-      html_8 = """
+    if out[0] == 0:
+        html_8 = """
       <div style="background-color:#ffffff;padding:20px;border: 3px solid #31333F;">
       <center><h3 style="border-bottom: 3px solid #31333F;">โอกาสหัวใจวายน้อย</h3></center>
       <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">โรคหัวใจวาย (Coronary Artery Disease, CAD) เป็นภาวะที่เกิดจากการสะสมของเส้นเลือดในหัวใจ (หลอดเลือดในหัวใจ) ทำให้การไหลของเลือดที่จำเป็นสำหรับการให้สารอาหารและออกซิเจนให้กับกล้ามเนื้อหัวใจลดลง สาเหตุหลักของโรคหัวใจวายคือการสะสมของตะกอนไขมันและแร่ธาตุในเส้นเลือดในหัวใจ (เช่น เนื้อเยื่อไขมัน, เซลล์เลือดขาว, และแคลเซียม) ซึ่งทำให้เกิดลิ่ม (plaque) ในเส้นเลือด ลิ่มนี้จะทำให้เส้นเลือดตีบ และสามารถทำให้เกิดอาการหัวใจวาย นี่คือบางวิธีที่อาจช่วยลดโอกาสหัวใจวาย</h6></left>
@@ -101,7 +98,7 @@ if st.button("ทำนายผล"):
       """
       st.markdown(html_8, unsafe_allow_html=True)
       st.markdown("")
-
+   
    elif out[0]==1: 
           
       html_9 = """
