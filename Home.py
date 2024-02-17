@@ -67,8 +67,8 @@ st.markdown("<style>label{font-size: 16px !important; font-weight: bold;}</style
 
 if st.button("ทำนายผล"):
 
-   X=df.drop(["output"],axis=1)
-   y=df["output"]
+   X=df.drop(["outcome"],axis=1)
+   y=df["outcome"]
 
    nb_model = GaussianNB()
    nb_model.fit(X, y)
