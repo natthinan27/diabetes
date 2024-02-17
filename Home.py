@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.naive_bayes import GaussianNB
+from sklearn.ensemble import RandomForestClassifier
 import matplotlib.gridspec as gridspec
 
 
@@ -70,7 +70,7 @@ if st.button("ทำนายผล"):
    X=df.drop(["Outcome"],axis=1)
    y=df["Outcome"]
 
-   rf_model = RandomForestClassifier()  # สร้างโมเดล Random Forests
+   rf_model = RandomForestClassifier()
    rf_model.fit(X, y)
 
 
