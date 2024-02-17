@@ -51,19 +51,15 @@ st.markdown("")
 
 
 # Your existing code
-s1 = st.number_input("# Age : อายุของผู้ป่วย")
-s2 = st.selectbox("# Sex : เพศของผู้ป่วย (0 : หญิง | 1 : ชาย)", [0, 1])
-s3 = st.selectbox("# Cp : อาการเจ็บหน้าอก\n(0 : โรคหลอดเลือดหัวใจตีบทั่วไป | 1 : โรคหลอดเลือดหัวใจตีบผิดปรกติ | 2 : อาการปวดที่ไม่ใช่โรคหลอดเลือดหัวใจตีบ | 3 : ไม่มีอาการ)", [0, 1, 2, 3])
-s4 = st.number_input("# Trtbps : ความดันโลหิตขณะพัก (มม. ปรอท)")
-s5 = st.number_input("# Chol : cholestoral ใน mg/dl ดึงผ่านเซ็นเซอร์ BMI")
-s6 = st.selectbox("# Fbs : น้ําตาลในเลือดขณะอดอาหาร > 120 มก./ดล. (1 = จริง 0 = เท็จ)", [0, 1])
-s7 = st.selectbox("# Restecg : พักผลการตรวจคลื่นไฟฟ้าหัวใจ ( 0 : ปกติ | 1 : มีความผิดปกติของคลื่น ST-T | 2 : แสดงกระเป๋าหน้าท้องยั่วยวนซ้ายที่เป็นไปได้หรือแน่นอนตามเกณฑ์ของเอสเตส)", [0, 1, 2])
-s8 = st.number_input("# Thalachh : อัตราการเต้นของหัวใจสูงสุดทําได้")
-s9 = st.selectbox("# Exng : การออกกําลังกายทําให้เกิดโรคหลอดเลือดหัวใจตีบ (1 = ใช่ 0 = ไม่ใช่)", [0, 1])
-s10 = st.number_input("# Oldpeak : จุดสูงสุดก่อนหน้า")
-s11 = st.selectbox("# Slp : Slope", [0, 1, 2])
-s12 = st.selectbox("# Caa : Number of major vessels (0-3)", [0, 1, 2, 3])
-s13 = st.selectbox("# Thall : Thal rate", [0, 1, 2, 3])
+s1 = st.number_input("# Pregnancies : จำนวนการตั้งครรภ์")
+s2 = st.number_input("# Glucose : ระดับกลูโคสในเลือด")
+s = st.number_input("# BloodPressure : การวัดความดันโลหิต")
+s4 = st.number_input("# SkinThickness : ความหนาของผิวหนัง")
+s5 = st.number_input("# Insulin : ระดับอินซูลินในเลือด")
+s6 = st.number_input("# BMI : ดัชนีมวลกาย")
+s7 = st.number_input("# DiabetesPedigreeFunction : เปอร์เซ็นต์โรคเบาหวาน")
+s8 = st.number_input("# Age : อายุของผู้ป่วย")
+s9 = st.selectbox("# Outcome : ผลลัพธ์สุดท้าย  (1 = ใช่ 0 = ไม่ใช่)", [0, 1])
 
 # Adjusting font size and making it bold
 st.markdown("<style>h1{font-size: 18px !important;}</style>", unsafe_allow_html=True)
@@ -71,14 +67,14 @@ st.markdown("<style>label{font-size: 16px !important; font-weight: bold;}</style
 
 if st.button("ทำนายผล"):
 
-   X=df.drop(["output"],axis=1)
-   y=df["output"]
+   X=df.drop(["Outcome"],axis=1)
+   y=df["Outcome"]
 
    nb_model = GaussianNB()
    nb_model.fit(X, y)
 
 
-   x_input = np.array([[s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13]])
+   x_input = np.array([[s1, s2, s3, s4, s5, s6, s7, s8, s9]])
 
    out = nb_model.predict(x_input)
 
