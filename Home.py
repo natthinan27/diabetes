@@ -109,7 +109,7 @@ if st.button("ทำนายผล"):
       <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">การป้องกันโรคเบาหวานมักจะเน้นไปที่การรักษาพฤติกรรมที่เปลี่ยนแปลงได้ และการสร้างนิสัยการดูแลสุขภาพที่ดี โดยการปฏิบัติตามแนวทางดังกล่าวอาจช่วยลดความเสี่ยงต่อโรคเบาหวานอย่างมีประสิทธิภาพ</h6></left>
       </div>
       """
-      st.markdown(html_8, unsafe_allow_html=True)
+      st.markdown(html_9, unsafe_allow_html=True)
       st.markdown("")
       
 
