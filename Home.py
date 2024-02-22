@@ -85,7 +85,6 @@ if st.button("ทำนายผล"):
       html_11 = """
       <div style="background-color:#EEEEEE;padding:20px;border: 3px solid #31333F;">
       <center><h2 border: 2px solid #000000;>Prediction Result</h2></center>
-      <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">วิธีการป้องกันโรคเบาหวาน</h6></left>
       </div>
       """
       st.markdown(html_11, unsafe_allow_html=True)
