@@ -64,7 +64,7 @@ s8 = st.number_input("# Age : อายุของผู้ป่วย")
 # Adjusting font size and making it bold
 st.markdown("<style>h1{font-size: 18px !important;}</style>", unsafe_allow_html=True)
 st.markdown("<style>label{font-size: 16px !important; font-weight: bold;}</style>", unsafe_allow_html=True)
-st.markdown('<div style="text-align:center"><br></div>', unsafe_allow_html=True)
+
 if st.button("ทำนายผล"):
    
    X=df.drop(["Outcome"],axis=1)
@@ -83,7 +83,7 @@ if st.button("ทำนายผล"):
 
           
       html_11 = """
-      <div style="background-color:#EEEEEE;padding:5px;border: 3px solid #;">
+      <div style="background-color:#E799A3;padding:5px;border: 3px solid #;">
       <center><h2 border: 2px solid #000000;>Prediction Result</h2></center>
       </div>
       """
@@ -91,7 +91,7 @@ if st.button("ทำนายผล"):
       st.markdown("")
           
       html_8 = """
-      <div style="background-color:#EEEEEE;padding:20px;border: 3px solid #31333F;">
+      <div style="background-color:#E799A3;padding:20px;border: 3px solid #31333F;">
       <center><h3>ความเสี่ยงโรคเบาหวานต่ำ</h3></center>
       <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">โรคเบาหวาน (Diabetes) คือโรคที่เกิดจากความผิดปกติของการทำงานของฮอร์โมนที่ชื่อว่า อินสุลิน (Insulin) ซึ่งโดยปกติแล้วร่างกายของคนเราจำเป็นต้องมีอินสุลิน เพื่อนำน้ำตาลในกระแสเลือดไปเลี้ยงอวัยวะต่าง ๆ ของร่างกาย โดยเฉพาะสมองและกล้ามเนื้อ ในภาวะที่อินสุลินมีความผิดปกติ ไม่ว่าจะเป็นการลดลงของปริมาณอินสุลินในร่างกาย หรือการที่อวัยวะต่าง ๆ ของร่างกายตอบสนองต่ออินสุลินลดลง (หรือที่เรียกว่า ภาวะดื้ออินสุลิน) จะทำให้ร่างกายไม่สามารถนำน้ำตาลที่อยู่ในกระแสเลือดไปใช้ได้อย่างเต็มประสิทธิภาพ ทำให้มีปริมาณน้ำตาลคงเหลือในกระแสเลือดมากกว่าปกติ</h6></left>
 
@@ -101,7 +101,7 @@ if st.button("ทำนายผล"):
       st.markdown("")
 
       html_9 = """
-      <div style="background-color:#EEEEEE;padding:20px;border: 3px solid #31333F;">
+      <div style="background-color:#E799A3;padding:20px;border: 3px solid #31333F;">
       <center><h3 style="border-bottom: 3px solid #31333F;">คำแนะนำ</h3></center>
       <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">วิธีการป้องกันโรคเบาหวาน</h6></left>
       <ul>
