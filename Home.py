@@ -64,7 +64,15 @@ s8 = st.number_input("# Age : อายุของผู้ป่วย")
 # Adjusting font size and making it bold
 st.markdown("<style>h1{font-size: 18px !important;}</style>", unsafe_allow_html=True)
 st.markdown("<style>label{font-size: 16px !important; font-weight: bold;}</style>", unsafe_allow_html=True)
-
+# Center-align button
+st.markdown("""
+<style>
+div.stButton > button:first-child {
+    display: block;
+    margin: 0 auto;
+}
+</style>
+""", unsafe_allow_html=True)
 if st.button("ทำนายผล"):
    
    X=df.drop(["Outcome"],axis=1)
