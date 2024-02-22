@@ -135,7 +135,7 @@ if st.button("ทำนายผล"):
 
    elif out[0]==1: 
           
-       html_10 = """
+      html_10 = """
       <div style="background-color:#E6E6FA;padding:5px;border: 3px solid #;">
       <center><h2 border: 2px solid #000000;>Prediction Result</h2></center>
       </div>
