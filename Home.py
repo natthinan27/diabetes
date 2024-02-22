@@ -70,6 +70,9 @@ st.markdown("""
 div.stButton > button:first-child {
     display: block;
     margin: 0 auto;
+    border: 3px solid #7B68EE;
+    border-radius: 19px;
+    box-shadow: 1px 1px 11px 11px rgba(123, 104, 238, 0.26);                
 }
 </style>
 """, unsafe_allow_html=True)
