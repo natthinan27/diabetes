@@ -43,7 +43,7 @@ st.write(df.head(10))
 
 html_7 = """
 <div style="background-color:E6E6FA;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;margin-top:20px;">
-<center><h3>Class Prediction</h3></center>
+<center><h3>Risk prediction of diabetes in women</h3></center>
 </div>
 """
 st.markdown(html_7, unsafe_allow_html=True)
