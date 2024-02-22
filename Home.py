@@ -99,7 +99,15 @@ if st.button("ทำนายผล"):
       st.markdown("")
           
       html_8 = """
-      <div style="background-color:#E6E6FA;padding:20px;border: 3px solid #31333F;">
+      <div style="background-color:#E6E6FA;padding:20px;border: 3px solid #31333F;
+.noto-sans thai-<uniquifier> {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}">
       <center><h3>ความเสี่ยงโรคเบาหวานต่ำ</h3></center>
       <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">โรคเบาหวาน (Diabetes) คือโรคที่เกิดจากความผิดปกติของการทำงานของฮอร์โมนที่ชื่อว่า อินสุลิน (Insulin) ซึ่งโดยปกติแล้วร่างกายของคนเราจำเป็นต้องมีอินสุลิน เพื่อนำน้ำตาลในกระแสเลือดไปเลี้ยงอวัยวะต่าง ๆ ของร่างกาย โดยเฉพาะสมองและกล้ามเนื้อ ในภาวะที่อินสุลินมีความผิดปกติ ไม่ว่าจะเป็นการลดลงของปริมาณอินสุลินในร่างกาย หรือการที่อวัยวะต่าง ๆ ของร่างกายตอบสนองต่ออินสุลินลดลง (หรือที่เรียกว่า ภาวะดื้ออินสุลิน) จะทำให้ร่างกายไม่สามารถนำน้ำตาลที่อยู่ในกระแสเลือดไปใช้ได้อย่างเต็มประสิทธิภาพ ทำให้มีปริมาณน้ำตาลคงเหลือในกระแสเลือดมากกว่าปกติ</h6></left>
 
