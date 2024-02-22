@@ -72,8 +72,8 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-if st.button("ทำนายผล"):
-
+if st.button("ทำนายผล", class="centered-btn"):
+   pass
    X=df.drop(["Outcome"],axis=1)
    y=df["Outcome"]
 
