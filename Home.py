@@ -135,10 +135,27 @@ if st.button("ทำนายผล"):
 
    elif out[0]==1: 
           
-      html_10 = """
+       html_10 = """
+      <div style="background-color:#E6E6FA;padding:5px;border: 3px solid #;">
+      <center><h2 border: 2px solid #000000;>Prediction Result</h2></center>
+      </div>
+      """
+      st.markdown(html_10, unsafe_allow_html=True)
+      st.markdown("")
+          
+      html_12 = """
       <div style="background-color:#E6E6FA;padding:20px;border: 3px solid #31333F;">
-      <center><h3 style="border-bottom: 3px solid #31333F;">มีโอกาสเป็นเบาหวานสูง</h3></center>
+      <center><h3 style=>ความเสี่ยงโรคเบาหวานสูง</h3></center>
       <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">โรคเบาหวาน (Diabetes) คือโรคที่เกิดจากความผิดปกติของการทำงานของฮอร์โมนที่ชื่อว่า อินสุลิน (Insulin) ซึ่งโดยปกติแล้วร่างกายของคนเราจำเป็นต้องมีอินสุลิน เพื่อนำน้ำตาลในกระแสเลือดไปเลี้ยงอวัยวะต่าง ๆ ของร่างกาย โดยเฉพาะสมองและกล้ามเนื้อ ในภาวะที่อินสุลินมีความผิดปกติ ไม่ว่าจะเป็นการลดลงของปริมาณอินสุลินในร่างกาย หรือการที่อวัยวะต่าง ๆ ของร่างกายตอบสนองต่ออินสุลินลดลง (หรือที่เรียกว่า ภาวะดื้ออินสุลิน) จะทำให้ร่างกายไม่สามารถนำน้ำตาลที่อยู่ในกระแสเลือดไปใช้ได้อย่างเต็มประสิทธิภาพ ทำให้มีปริมาณน้ำตาลคงเหลือในกระแสเลือดมากกว่าปกติ</h6></left>
+
+      </div>
+      """
+      st.markdown(html_12, unsafe_allow_html=True)
+      st.markdown("")
+
+      html_13 = """
+      <div style="background-color:#E6E6FA;padding:20px;border: 3px solid #31333F;">
+      <center><h3 style="border-bottom: 3px solid #31333F;">คำแนะนำ</h3></center>
       <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">วิธีการป้องกันโรคเบาหวาน</h6></left>
       <ul>
          <li>ควบคุมน้ำหนัก: การรักษาน้ำหนักที่เหมาะสมหรือลดน้ำหนักหากมีน้ำหนักเกินมาจะช่วยลดความเสี่ยงในการเป็นโรคเบาหวาน</li>
@@ -152,5 +169,5 @@ if st.button("ทำนายผล"):
       <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">การป้องกันโรคเบาหวานมักจะเน้นไปที่การรักษาพฤติกรรมที่เปลี่ยนแปลงได้ และการสร้างนิสัยการดูแลสุขภาพที่ดี โดยการปฏิบัติตามแนวทางดังกล่าวอาจช่วยลดความเสี่ยงต่อโรคเบาหวานอย่างมีประสิทธิภาพ</h6></left>
       </div>
       """
-      st.markdown(html_9, unsafe_allow_html=True)
+      st.markdown(html_13, unsafe_allow_html=True)
       st.markdown("")
