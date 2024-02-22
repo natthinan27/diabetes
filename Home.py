@@ -80,10 +80,19 @@ if st.button("ทำนายผล"):
    out = rf_model.predict(x_input)
 
    if out[0]== 0 :
+
+          
+      html_11 = """
+      <div style="background-color:#EEEEEE;padding:20px;border: 3px solid #31333F;">
+      <center><h2 border: 2px solid #000000;>Prediction Result</h2></center>
+      <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">วิธีการป้องกันโรคเบาหวาน</h6></left>
+      </div>
+      """
+      st.markdown(html_11, unsafe_allow_html=True)
+      st.markdown("")
           
       html_8 = """
       <div style="background-color:#EEEEEE;padding:20px;border: 3px solid #31333F;">
-      <center><h2 border: 2px solid #000000;>Prediction Result</h2></center>
       <center><h3>ความเสี่ยงโรคเบาหวานต่ำ</h3></center>
       <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">โรคเบาหวาน (Diabetes) คือโรคที่เกิดจากความผิดปกติของการทำงานของฮอร์โมนที่ชื่อว่า อินสุลิน (Insulin) ซึ่งโดยปกติแล้วร่างกายของคนเราจำเป็นต้องมีอินสุลิน เพื่อนำน้ำตาลในกระแสเลือดไปเลี้ยงอวัยวะต่าง ๆ ของร่างกาย โดยเฉพาะสมองและกล้ามเนื้อ ในภาวะที่อินสุลินมีความผิดปกติ ไม่ว่าจะเป็นการลดลงของปริมาณอินสุลินในร่างกาย หรือการที่อวัยวะต่าง ๆ ของร่างกายตอบสนองต่ออินสุลินลดลง (หรือที่เรียกว่า ภาวะดื้ออินสุลิน) จะทำให้ร่างกายไม่สามารถนำน้ำตาลที่อยู่ในกระแสเลือดไปใช้ได้อย่างเต็มประสิทธิภาพ ทำให้มีปริมาณน้ำตาลคงเหลือในกระแสเลือดมากกว่าปกติ</h6></left>
       <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">วิธีการป้องกันโรคเบาหวาน</h6></left>
