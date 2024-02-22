@@ -7,7 +7,7 @@ import matplotlib.gridspec as gridspec
 
 
 html_1 = """
-<div style="background-color:#E799A3;margin-top:40px;padding:5px;border-radius:5px;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;">
+<div style="background-color:#E6E6FA;margin-top:40px;padding:5px;border-radius:5px;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;">
 <center><h4>การวิเคราะห์และการทำนายความเสี่ยงผู้ป่วยเป็นโรคเบาหวานที่ผู้ป่วยเป็นผู้หญิง</h4><h5>Analysis and prediction of the risk of diabetes in female patients.</h5></center>
 </div>
 """
@@ -33,7 +33,7 @@ df = pd.read_excel('./data/diabetes.xlsx')
 ### Analysis ###
 
 html_6 = """
-<div style="background-color:#E799A3;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;">
+<div style="background-color:#E6E6FA;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;">
 <center><h3>Example data table</h3></center>
 </div>
 """
@@ -42,7 +42,7 @@ st.markdown("")
 st.write(df.head(10))
 
 html_7 = """
-<div style="background-color:E799A3;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;margin-top:20px;">
+<div style="background-color:E6E6FA;border-bottom: 3px solid #31333F;border-top: 3px solid #31333F;margin-top:20px;">
 <center><h3>Class Prediction</h3></center>
 </div>
 """
