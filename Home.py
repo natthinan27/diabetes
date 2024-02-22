@@ -83,7 +83,7 @@ if st.button("ทำนายผล"):
 
           
       html_11 = """
-      <div style="background-color:#EEEEEE;padding:15px;border: 3px solid #;">
+      <div style="background-color:#EEEEEE;padding:5px;border: 3px solid #;">
       <center><h2 border: 2px solid #000000;>Prediction Result</h2></center>
       </div>
       """
